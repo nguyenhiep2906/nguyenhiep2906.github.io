@@ -1,1466 +1,1397 @@
 <!DOCTYPE html>
-<html lang="vi">
+<!-- MedService - Medical & Medical Health Landing Page Template design by Jthemes -->
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+
+
+
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Bệnh viện đa khoa Gia Lâm</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
 
-  <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Jthemes" />
+    <meta name="description" content="MedService - Medical & Medical Health Landing Page Template" />
+    <meta name="keywords"
+        content="Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Favicons -->
-  <link href="https://benhviengialam.com/Themes/img/logo-01.png" rel="icon">
-  <link href="https://benhviengialam.com/Themes/img/logo-01.png" rel="apple-touch-icon">
+    <!-- SITE TITLE -->
+    <title>MedService - Medical & Medical Health Landing Page Template</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- FAVICON AND TOUCH ICONS  -->
+    <link rel="shortcut icon" href="https://jthemes.net/themes/html/medservices/files/images/favicon.ico"
+        type="image/x-icon">
+    <link rel="icon" href="https://jthemes.net/themes/html/medservices/files/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://jthemes.net/themes/html/medservices/files/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://jthemes.net/themes/html/medservices/files/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76"
+        href="https://jthemes.net/themes/html/medservices/files/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" href="https://jthemes.net/themes/html/medservices/files/images/apple-touch-icon.png">
 
-  <!-- Vendor CSS Files -->
-  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/css/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/css/aos.css" rel="stylesheet">
-  <link href="./assets/css/all.min.css" rel="stylesheet">
-  <link href="./assets/css/glightbox.min.css" rel="stylesheet">
-  <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="./assets/css/main.css" rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT ICONS -->
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="css/flaticon.css" rel="stylesheet">
+
+    <!-- PLUGINS STYLESHEET -->
+    <link href="css/menu.css" rel="stylesheet">
+    <link id="effect" href="css/dropdown-effects/fade-down.css" media="all" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
+
+    <!-- TEMPLATE CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- RESPONSIVE CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
 
 </head>
 
-<body class="index-page">
-
-  <header id="header" class="header sticky-top">
-
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="d-none d-md-flex align-items-center">
-          <i class="bi bi-clock me-1"></i> Thứ 2 - Thứ 7, 8AM đến 10PM
+<body>
+    <!-- PRELOADER SPINNER
+		============================================= -->
+    <div id="loader-wrapper">
+        <div id="loader">
+            <div class="loader-inner"></div>
         </div>
-        <div class="d-flex align-items-center">
-          <i class="bi bi-phone me-1"></i> Gọi cho chúng tôi ngay 024 38 760 517
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
-
-    <div class="branding d-flex align-items-center">
-
-      <div class="container position-relative d-flex align-items-center justify-content-end">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <img src="https://benhviengialam.com/Themes/img/logo-01.png" alt="">
-          <!-- Uncomment the line below if you also wish to use a text logo -->
-          <!-- <h1 class="sitename">Medicio</h1>  -->
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Trang chủ</a></li>
-            <li><a href="#about">Giới thiệu</a></li>
-            <li><a href="#services">Dịch vụ</a></li>
-            <li><a href="#departments">Chuyên khoa</a></li>
-            <li><a href="#doctors">Chuyên gia</a></li>
-            <li class="dropdown">
-              <a href="#"><span>Tin tức</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                      class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#contact">Liên hệ</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-        <a class="cta-btn" href="index.html#appointment">Trả kết quả  online</a>
-      </div>
-
     </div>
 
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item active">
-          <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-        </div><!-- End Carousel Item -->
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-        <ol class="carousel-indicators"></ol>
-
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- Featured Services Section -->
-    <section id="featured-services" class="featured-services section">
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative text-center">
-              <div class="icon"><i class="fas fa-heartbeat icon"></i></div>
-              <h4><a href="" class="stretched-link">Về chúng tôi</a></h4>
-              <p class="text-justify-custom">Tìm hiểu về sứ mệnh, tầm nhìn và giá trị cốt lõi của bệnh viện, cùng đội
-                ngũ bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.</p>
+    <!-- PAGE CONTENT
+		============================================= -->
+    <div id="page" class="page">
+        <!-- HEADER
+			============================================= -->
+        <header id="header" class="header">
+            <!-- MOBILE HEADER -->
+            <div class="wsmobileheader clearfix">
+                <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+                <span class="smllogo"><img src="https://www.benhvienphuctho.vn/assets/images/logo.png" height="50"
+                        alt="mobile-logo" /></span>
+                <a href="tel:+842433848351" class="callusbtn"><i class="fas fa-phone"></i></a>
             </div>
-          </div><!-- End Service Item -->
+            <!-- HEADER STRIP -->
+            <div class="headtoppart bg-blue clearfix">
+                <div class="headerwp clearfix">
+                    <!-- Address -->
+                    <div class="headertopleft">
+                        <div class="address clearfix">
+                            <span><i class="fas fa-mail"></i>bvdkpt@hanoi.gov.vn</span>
+                            <a href="tel:+842433848351" class="callusbtn">
+                                <i class="fas fa-phone"></i>+84 2433848351
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END HEADER STRIP -->
+            <!-- NAVIGATION MENU -->
+            <div class="wsmainfull menu clearfix">
+                <div class="wsmainwp clearfix">
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative text-center">
-              <div class="icon"><i class="fas fa-pills icon"></i></div>
-              <h4><a href="" class="stretched-link">Thông báo</a></h4>
-              <p>Cập nhật nhanh các thông tin mới nhất về lịch khám, chương trình ưu đãi, sự kiện và hướng dẫn cho bệnh
-                nhân.</p>
-            </div>
-          </div><!-- End Service Item -->
+                    <!-- LOGO IMAGE -->
+                    <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
+                    <div class="desktoplogo">
+                        <a href="#hero-1">
+                            <img src="https://www.benhvienphuctho.vn/assets/images/logo.png" height="50"
+                                alt="header-logo">
+                        </a>
+                    </div>
+                    <!-- MAIN MENU -->
+                    <nav class="wsmenu clearfix">
+                        <ul class="wsmenu-list">
+                            <li class="nl-simple header-btn" aria-haspopup="true"><a href="/">Trang chủ</a></li>
+                            <!-- DROPDOWN MENU -->
+                            <li aria-haspopup="true"><a href="#">Giới thiệu<span class="wsarrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="#">Giới thiệu chung</a></li>
+                                    <li aria-haspopup="true"><a href="#">Nhiệm vụ và quyền hạn</a></li>
+                                    <li aria-haspopup="true"><a href="#">Ban giám đốc</a></li>
+                                </ul>
+                            </li> <!-- END DROPDOWN MENU -->
+                            <!-- DROPDOWN MENU -->
+                            <li aria-haspopup="true"><a href="#">Khoa phòng<span class="wsarrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="#">Phòng chức năng</a></li>
+                                    <li aria-haspopup="true"><a href="#">Khoa Lâm sàng</a></li>
+                                    <li aria-haspopup="true"><a href="#">Khoa Cận lâm sàng</a></li>
+                                </ul>
+                            </li> <!-- END DROPDOWN MENU -->
+                            <!-- DROPDOWN MENU -->
+                            <li aria-haspopup="true"><a href="#">Tin tức - Sự kiện<span class="wsarrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="#">Bảng giá</a></li>
+                                    <li aria-haspopup="true"><a href="#">Công tác xã hội</a></li>
+                                    <li aria-haspopup="true"><a href="#">Lịch công tác</a></li>
+                                    <li aria-haspopup="true"><a href="#">Thông tin mua sắm - đầu tư</a></li>
+                                    <li aria-haspopup="true"><a href="#">Thông tin thuốc</a></li>
+                                    <li aria-haspopup="true"><a href="#">Tuyển dụng</a></li>
+                                </ul>
+                            </li> <!-- END DROPDOWN MENU -->
+                            <!-- DROPDOWN MENU -->
+                            <li aria-haspopup="true"><a href="#">Dịch vụ<span class="wsarrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="#">Khám sức khỏe doanh nghiệp</a></li>
+                                    <li aria-haspopup="true"><a href="#">Khám sức khỏe cá nhân</a></li>
+                                    <li aria-haspopup="true"><a href="#">Khám chữa bệnh yêu cầu</a></li>
+                                </ul>
+                            </li> <!-- END DROPDOWN MENU -->
+                            <!-- DROPDOWN MENU -->
+                            <li aria-haspopup="true"><a href="#">Văn bản<span class="wsarrow"></span></a>
+                                <ul class="sub-menu">
+                                    <li aria-haspopup="true"><a href="#">Văn bản Bộ y tế</a></li>
+                                    <li aria-haspopup="true"><a href="#">Văn bản Sở y tế</a></li>
+                                    <li aria-haspopup="true"><a href="#">Văn bản bệnh viện</a></li>
+                                    <li aria-haspopup="true"><a href="#">Văn bản Bảo hiểm xã hội</a></li>
+                                    <li aria-haspopup="true"><a href="#">Văn bản khác</a></li>
+                                </ul>
+                            </li> <!-- END DROPDOWN MENU -->
+                            <!-- NAVIGATION MENU BUTTON -->
+                            <li class="nl-simple header-btn" aria-haspopup="true"><a href="appointment.html">Đặt khám
+                                    online</a></li>
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative text-center">
-              <div class="icon"><i class="fas fa-thermometer icon"></i></div>
-              <h4><a href="" class="stretched-link">Bảng giá</a></h4>
-              <p>Xem chi tiết chi phí các dịch vụ y tế, khám chữa bệnh và xét nghiệm, minh bạch và rõ ràng để bạn dễ
-                dàng tham khảo và lựa chọn.</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative text-center">
-              <div class="icon"><i class="fas fa-dna icon"></i></div>
-              <h4><a href="" class="stretched-link">Tư vấn online</a></h4>
-              <p>Những phản hồi và chia sẻ thực tế từ bệnh nhân đã trải nghiệm dịch vụ giúp bạn có cái nhìn khách quan
-                về chất lượng chăm sóc tại bệnh viện.</p>
-            </div>
-          </div><!-- End Service Item -->
+                        </ul>
+                    </nav> <!-- END MAIN MENU -->
 
-        </div>
+                </div>
+            </div> <!-- END NAVIGATION MENU -->
 
-      </div>
 
-    </section><!-- /Featured Services Section -->
+        </header> <!-- END HEADER -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section accent-background">
 
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Trong trường hợp khẩn cấp? Cần giúp đỡ ngay bây giờ?</h3>
-              <p>
-                Khi gặp tình huống khẩn cấp hoặc cần được hỗ trợ y tế ngay lập tức, hãy liên hệ với chúng tôi để được tư
-                vấn và hướng dẫn kịp thời.
-                Đội ngũ bác sĩ và nhân viên trực 24/7 luôn sẵn sàng đồng hành, đảm bảo an toàn và chăm sóc tốt nhất cho
-                bạn.
-              </p>
-              <a class="cta-btn" href="#appointment">Đặt lịch khám</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </section><!-- /Call To Action Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+        <!-- HERO-1
+			============================================= -->
+        <section id="hero-1" class="bg-fixed hero-section division">
+            <div class="container">
+                <div class="row d-flex align-items-center">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>GIỚI THIỆU CHUNG<br></h2>
-        <strong>Sứ mệnh - Tầm nhìn - Giá trị cốt lõi</strong>
-      </div><!-- End Section Title -->
 
-      <div class="container">
+                    <!-- HERO TEXT -->
+                    <div class="col-md-8 col-lg-7 col-xl-6">
+                        <div class="hero-txt mb-40">
 
-        <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/gioi_thieu_tong_quan_ve_benh_vien_da_khoa_gia_lam_2_96a176ae9f.png"
-              class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=7sSFaBw28uA" class="glightbox pulsating-play-btn"></a>
-          </div>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Chăm sóc sức khỏe toàn diện – Vì một cộng đồng khỏe mạnh hơn.</h3>
-            <p class="fst-italic">
-              Chúng tôi cam kết mang đến dịch vụ y tế chất lượng cao, ứng dụng công nghệ hiện đại cùng đội ngũ chuyên
-              gia giàu kinh nghiệm nhằm đáp ứng mọi nhu cầu khám chữa bệnh của người dân.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span><strong>Sứ mệnh:</strong> Cung cấp dịch vụ y tế an toàn, hiệu
-                  quả và nhân văn, đặt người bệnh làm trung tâm trong mọi hoạt động.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span><strong>Tầm nhìn:</strong> Trở thành đơn vị y tế uy tín, tiên
-                  phong trong ứng dụng kỹ thuật hiện đại và cải tiến chất lượng khám chữa bệnh.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span><strong>Giá trị cốt lõi:</strong> Chuyên nghiệp – Tận tâm –
-                  Minh bạch – Đổi mới – Tôn trọng người bệnh.</span></li>
-            </ul>
-            <p>
-              Chúng tôi không ngừng nâng cao chất lượng dịch vụ, đầu tư trang thiết bị tiên tiến và phát triển đội ngũ
-              bác sĩ, điều dưỡng giàu chuyên môn.
-              Mục tiêu của chúng tôi là mang lại sự hài lòng cao nhất cho người bệnh, đóng góp vào sự phát triển bền
-              vững của ngành y tế và cộng đồng
-            </p>
-          </div>
-        </div>
+                            <!-- Title -->
+                            <h4 class="steelblue-color">BỆNH VIỆN ĐA KHOA PHÚC THỌ</h4>
+                            <h5 class="steelblue-color">Chăm sóc sức khỏe toàn diện cho bạn và gia đình bằng dịch vụ y
+                                tế chuyên nghiệp, tận tâm và giải pháp điều trị hiện đại</h5>
 
-      </div>
+                            <!-- Text -->
+                            <p class="p-md">Bệnh viện đa khoa đồng hành cùng bạn trên hành trình chăm sóc sức khỏe, luôn
+                                đặt an toàn và sự an tâm của người bệnh lên hàng đầu.
+                            </p>
 
-    </section><!-- /About Section -->
+                            <!-- Button -->
+                            <a href="#" class="btn btn-blue blue-hover">Tìm hiểu thêm</a>
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
+                        </div>
+                    </div> <!-- END HERO TEXT -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row gy-4">
+                    <!-- HERO IMAGE -->
+                    <div class="col-md-4 col-lg-5 col-xl-6">
+                        <div class="hero-1-img text-center">
+                            <img class="img-fluid"
+                                src="https://jthemes.net/themes/html/medservices/files/images/hero-1-img.png"
+                                alt="hero-image">
+                        </div>
+                    </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="fas fa-user-md flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Bác sĩ</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="far fa-hospital flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Khoa phòng</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </section> <!-- END HERO-1 -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="fas fa-flask flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Bệnh nhân nội trú</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center w-100 h-100">
-              <i class="fas fa-award flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
-                  class="purecounter"></span>
-                <p>Lượt khám ngoại trú</p>
-              </div>
-            </div>
-          </div><!-- End Stats Item -->
 
-        </div>
 
-      </div>
+        <!-- ABOUT-1
+			============================================= -->
+        <section id="about-1" class="about-section division">
+            <div class="container">
+                <div class="row d-flex align-items-center">
 
-    </section><!-- /Stats Section -->
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+                    <!-- ABOUT BOX #1 -->
+                    <div id="abox-1" class="col-md-6 col-lg-3">
+                        <div class="abox-1 white-color">
 
-      <div class="container">
+                            <!-- Title -->
+                            <h5 class="h5-md">Lịch làm việc</h5>
 
-        <div class="row justify-content-around gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img
-              src="https://bootstrapmade.com/content/demo/Medicio/assets/img/features.jpg" alt=""></div>
+                            <!-- Table -->
+                            <table class="table white-color">
+                                <tbody>
+                                    <tr>
+                                        <td>Thứ Hai - Thứ Tư</td>
+                                        <td> - </td>
+                                        <td class="text-right">9:00 AM - 7:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thứ Năm</td>
+                                        <td> - </td>
+                                        <td class="text-right">9:00 AM - 6:30 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thứ Sáu</td>
+                                        <td> - </td>
+                                        <td class="text-right">9:00 AM - 6:00 PM</td>
+                                    </tr>
+                                    <tr class="last-tr">
+                                        <td>Chủ Nhật</td>
+                                        <td>-</td>
+                                        <td class="text-right">CLOSED</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-            <h3>CẬN LÂM SÀNG</h3>
-            <p>Cận lâm sàng tại bệnh viện cung cấp hệ thống các kỹ thuật xét nghiệm và chẩn đoán hiện đại,
-              hỗ trợ bác sĩ đánh giá chính xác tình trạng sức khỏe của người bệnh. Với trang thiết bị tiên tiến và đội
-              ngũ chuyên môn giàu kinh nghiệm,
-              chúng tôi đảm bảo kết quả nhanh chóng, tin cậy, góp phần nâng cao hiệu quả điều trị và chăm sóc toàn diện
-              cho bệnh nhân.
-            </p>
+                        </div>
+                    </div>
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-              <i class="fa-solid fa-microscope flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Xét nghiệm</a></h4>
-                <p>Cung cấp đầy đủ các dịch vụ xét nghiệm huyết học, sinh hóa, miễn dịch, vi sinh… với hệ thống máy móc
-                  hiện đại, cho kết quả nhanh chóng và chính xác.</p>
-              </div>
-            </div><!-- End Icon Box -->
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-              <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Chẩn đoán hình ảnh</a></h4>
-                <p>Thực hiện các kỹ thuật chẩn đoán hình ảnh như X-quang, siêu âm, CT-Scan, MRI với đội ngũ bác sĩ giàu
-                  kinh nghiệm. Giúp phát hiện sớm các bệnh lý và đưa ra đánh giá toàn diện về tình trạng sức khỏe.</p>
-              </div>
-            </div><!-- End Icon Box -->
+                    <!-- ABOUT BOX #2 -->
+                    <div id="abox-2" class="col-md-6 col-lg-3">
+                        <div class="abox-1 white-color">
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
-              <i class="fa-solid fa-stethoscope flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Thăm dò chức năng</a></h4>
-                <p>Cung cấp các dịch vụ thăm dò chức năng như điện tim, điện não, đo chức năng hô hấp, đo loãng xương…
-                  nhằm đánh giá hoạt động của các cơ quan trong cơ thể, hỗ trợ chẩn đoán chính xác và hiệu quả.</p>
-              </div>
-            </div><!-- End Icon Box -->
+                            <h5 class="h5-md">Tra cứu kết quả khám bệnh</h5>
 
-            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-              <i class="fa-solid fa-lungs flex-shrink-0"></i>
-              <div>
-                <h4><a href="" class="stretched-link">Hệ thống nội soi</a></h4>
-                <p>Triển khai các kỹ thuật nội soi tiêu hóa, tai mũi họng và các chuyên khoa khác bằng thiết bị hiện
-                  đại, hình ảnh sắc nét. Giúp phát hiện tổn thương sớm, chẩn đoán chính xác và can thiệp điều trị kịp
-                  thời.</p>
-              </div>
-            </div><!-- End Icon Box -->
+                            <!-- Text -->
+                            <p>Nhập mã hồ sơ hoặc thông tin cá nhân để tra cứu kết quả khám bệnh nhanh chóng và chính
+                                xác.
+                            </p>
 
-          </div>
-        </div>
+                            <!-- Button -->
+                            <a href="timetable.html" class="btn btn-sm btn-tra-white mt-25">Tra cứu ngay</a>
 
-      </div>
+                        </div>
+                    </div>
 
-    </section><!-- /Features Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+                    <!-- ABOUT BOX #3 -->
+                    <div id="abox-3" class="col-md-6 col-lg-3">
+                        <div class="abox-1 white-color">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>DỊCH VỤ</h2>
-        <p>Chúng tôi cung cấp hệ thống dịch vụ y tế toàn diện, đáp ứng nhu cầu khám chữa bệnh từ cơ bản đến chuyên sâu,
-          với đội ngũ bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.</p>
-      </div><!-- End Section Title -->
+                            <!-- Title -->
+                            <h5 class="h5-md">Đặt lịch khám</h5>
 
-      <div class="container">
+                            <!-- Text -->
+                            <p>Chúng tôi cung cấp dịch vụ đặt lịch khám trực tuyến tiện lợi, giúp bạn dễ dàng lựa chọn
+                                thời gian và bác sĩ phù hợp.
+                            </p>
 
-        <div class="row gy-4">
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-tra-white mt-25">Đặt lịch khám</a>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item  position-relative">
-              <div class="icon">
-                <i class="fas fa-heartbeat"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Khám chữa bệnh đa khoa</h3>
-              </a>
-              <p>Cung cấp dịch vụ khám và điều trị toàn diện cho nhiều chuyên khoa, hỗ trợ phát hiện sớm và xử lý hiệu
-                quả các vấn đề sức khỏe thường gặp.</p>
-            </div>
-          </div><!-- End Service Item -->
+                        </div>
+                    </div>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-pills"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Khám sức khoẻ</h3>
-              </a>
-              <p>Thực hiện các gói khám sức khỏe tổng quát và chuyên sâu, giúp đánh giá tình trạng sức khỏe, tầm soát
-                nguy cơ bệnh lý và tư vấn chăm sóc phù hợp.</p>
-            </div>
-          </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-hospital-user"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Phẫu thuật</h3>
-              </a>
-              <p>Triển khai các kỹ thuật phẫu thuật an toàn, hiện đại, do đội ngũ bác sĩ giàu kinh nghiệm trực tiếp thực
-                hiện, đảm bảo hiệu quả điều trị và tính an toàn cao.</p>
-            </div>
-          </div><!-- End Service Item -->
+                    <!-- ABOUT BOX #4 -->
+                    <div id="abox-4" class="col-md-6 col-lg-3">
+                        <div class="abox-1 white-color">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-dna"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Quản lý thai sản</h3>
-              </a>
-              <p>Theo dõi thai kỳ trọn gói từ những tuần đầu đến lúc sinh, đảm bảo mẹ và bé được chăm sóc toàn diện bởi
-                đội ngũ bác sĩ sản khoa chuyên nghiệp.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+                            <!-- Title -->
+                            <h5 class="h5-md">Trường hợp khẩn cấp</h5>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-wheelchair"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Quản lý bệnh mãn tính</h3>
-              </a>
-              <p>Theo dõi, điều trị và kiểm soát các bệnh lý mãn tính như đái tháo đường, tăng huyết áp, tim mạch… nhằm
-                giúp người bệnh ổn định sức khỏe lâu dài.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+                            <!-- Text -->
+                            <h5 class="h5-lg emergency-call"><i class="fas fa-phone"></i> +84 2433848351</h5>
+                            <p class="mt-20">Trong mọi tình huống cấp cứu, bệnh viện đa khoa luôn sẵn sàng tiếp nhận
+                                nhanh chóng, xử lý kịp thời.
+                            </p>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="fas fa-notes-medical"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>YHCT & PHCN</h3>
-              </a>
-              <p>Kết hợp phương pháp y học cổ truyền và kỹ thuật phục hồi chức năng hiện đại để điều trị đau nhức, chấn
-                thương và cải thiện khả năng vận động cho người bệnh.</p>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Service Item -->
+                        </div>
+                    </div>
 
-        </div>
 
-      </div>
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </section> <!-- END ABOUT-1 -->
 
-    </section><!-- /Services Section -->
 
-    <!-- Appointment Section -->
-    <section id="appointment" class="appointment section light-background">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>ĐẶT LỊCH KHÁM</h2>
-        <p>Chúng tôi cung cấp dịch vụ đặt lịch khám trực tuyến tiện lợi, giúp bạn dễ dàng lựa chọn thời gian và bác sĩ
-          phù hợp.</p>
-      </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- ABOUT-5
+			============================================= -->
+        <section id="about-5" class="pt-100 about-section division">
+            <div class="container">
+                <div class="row d-flex align-items-center">
 
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Họ tên của bạn" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email của bạn" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Số điện thoại của bạn"
-                required="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Ngày hẹn"
-                required="">
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select" required="">
-                <option value="">Chọn khoa</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select" required="">
-                <option value="">Chọn bác sĩ</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Tin nhắn"></textarea>
-          </div>
-          <div class="mt-3">
-            <div class="loading">Đang tải</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Yêu cầu đặt lịch của bạn đã được gửi thành công. Cảm ơn bạn!</div>
-            <div class="text-center"><button type="submit">Đặt lịch khám</button></div>
-          </div>
-        </form>
+                    <!-- IMAGE BLOCK -->
+                    <div class="col-lg-6">
+                        <div class="about-img text-center wow fadeInUp" data-wow-delay="0.6s">
+                            <img class="img-fluid"
+                                src="https://jthemes.net/themes/html/medservices/files/images/image-03.png"
+                                alt="about-image">
+                        </div>
+                    </div>
 
-      </div>
 
-    </section><!-- /Appointment Section -->
+                    <!-- TEXT BLOCK -->
+                    <div class="col-lg-6">
+                        <div class="txt-block pc-30 wow fadeInUp" data-wow-delay="0.4s">
 
-    <!-- Tabs Section -->
-    <section id="departments" class="tabs section">
+                            <!-- Section ID -->
+                            <span class="section-id blue-color">GIỚI THIỆU CHUNG</span>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>KHOA PHÒNG</h2>
-        <p>Chúng tôi cung cấp thông tin chi tiết về các khoa phòng để bạn dễ dàng lựa chọn dịch vụ phù hợp.</p>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">KHOA KHÁM BỆNH</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">KHOA NỘI TỔNG HỢP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">KHOA NGOẠI TỔNG HỢP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">KHOA PHỤ SẢN</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">KHOA NHI</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-6">KHOA HỒI SỨC CẤP CỨU</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-7">KHOA YHCT & PHCN</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tabs-tab-1">
+                            <!-- Title -->
+                            <h3 class="h3-md steelblue-color">Chăm sóc sức khỏe toàn diện – Vì một cộng đồng khỏe mạnh
+                                hơn</h3>
+
+                            <!-- Text -->
+                            <p>
+                                Chúng tôi cam kết mang đến dịch vụ y tế chất lượng cao, ứng dụng công nghệ hiện đại cùng
+                                đội ngũ
+                                chuyên gia giàu kinh nghiệm nhằm đáp ứng mọi nhu cầu khám chữa bệnh của người dân.
+                            </p>
+
+                        </div>
+                    </div> <!-- END TEXT BLOCK -->
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </section> <!-- END ABOUT-5 -->
+
+        <!-- SERVICES-3
+			============================================= -->
+        <section id="services-3" class="bg-lightgrey wide-100 services-section division">
+            <div class="container">
+
+                <!-- SECTION TITLE -->
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Cardiology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer
-                      a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa
-                      odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni
-                      nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/departments-1.jpg" alt=""
-                      class="img-fluid">
-                  </div>
+                    <div class="col-lg-10 offset-lg-1 section-title">
+                        <!-- Title 	-->
+                        <h3 class="h3-md steelblue-color">DỊCH VỤ</h3>
+
+                        <!-- Text -->
+                        <p>Chúng tôi cung cấp hệ thống dịch vụ y tế toàn diện, đáp ứng nhu cầu khám chữa bệnh từ cơ bản
+                            đến chuyên sâu, với đội ngũ bác sĩ giàu kinh nghiệm và trang thiết bị hiện đại.
+                        </p>
+
+                    </div>
                 </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-2">
+
+                <!-- SERVICES CONTENT -->
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Neurology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer
-                      a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt
-                      est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque
-                      beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/departments-2.jpg" alt=""
-                      class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-3">
+                    <!-- SERVICE BOX #1 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="sbox-3 icon-sm">
+                            <!-- Icon -->
+                            <div class="sbox-3-icon">
+                                <span class="flaticon-083-stethoscope"></span>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5-xs steelblue-color">Khám chữa bệnh đa khoa</h5>
+
+                            <!-- Text -->
+                            <p>Cung cấp dịch vụ khám và điều trị toàn diện cho nhiều chuyên khoa, hỗ trợ phát hiện
+                                sớm và xử lý hiệu
+                                quả các vấn đề sức khỏe thường gặp
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- SERVICE BOX #2 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="sbox-3 icon-sm">
+
+                            <!-- Icon -->
+                            <div class="sbox-3-icon">
+                                <span class="flaticon-047-head"></span>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5-xs steelblue-color">Khám sức khoẻ</h5>
+
+                            <!-- Text -->
+                            <p>
+                                Thực hiện các gói khám sức khỏe tổng quát và chuyên sâu, giúp đánh giá tình trạng
+                                sức khỏe, tầm soát
+                                nguy cơ bệnh lý và tư vấn chăm sóc phù hợp.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- SERVICE BOX #3 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="sbox-3 icon-sm">
+
+                            <!-- Icon -->
+                            <div class="sbox-3-icon">
+                                <span class="flaticon-015-blood-donation-1"></span>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5-xs steelblue-color">Phẫu thuật</h5>
+
+                            <!-- Text -->
+                            <p>
+                                Triển khai các kỹ thuật phẫu thuật an toàn, hiện đại, do đội ngũ bác sĩ giàu kinh
+                                nghiệm trực tiếp thực
+                                hiện, đảm bảo hiệu quả điều trị và tính an toàn cao.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- SERVICE BOX #4 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="sbox-3 icon-sm">
+
+                            <!-- Icon -->
+                            <div class="sbox-3-icon">
+                                <span class="flaticon-048-lungs"></span>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5-xs steelblue-color">Quản lý thai sản</h5>
+
+                            <!-- Text -->
+                            <p>
+                                Theo dõi thai kỳ trọn gói từ những tuần đầu đến lúc sinh, đảm bảo mẹ và bé được chăm
+                                sóc toàn diện bởi
+                                đội ngũ bác sĩ sản khoa chuyên nghiệp.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- SERVICE BOX #5 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="sbox-3 icon-sm">
+
+                            <!-- Icon -->
+                            <div class="sbox-3-icon">
+                                <span class="flaticon-060-cardiogram-4"></span>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5-xs steelblue-color">Quản lý bệnh mãn tính</h5>
+
+                            <!-- Text -->
+                            <p>
+                                Theo dõi, điều trị và kiểm soát các bệnh lý mãn tính như đái tháo đường, tăng huyết
+                                áp, tim mạch… nhằm
+                                giúp người bệnh ổn định sức khỏe lâu dài.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <!-- SERVICE BOX #6 -->
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="sbox-3 icon-sm">
+
+                            <!-- Icon -->
+                            <div class="sbox-3-icon">
+                                <span class="flaticon-031-scanner"></span>
+                            </div>
+
+                            <!-- Title -->
+                            <h5 class="h5-xs steelblue-color">YHCT & PHCN</h5>
+
+                            <!-- Text -->
+                            <p>
+                                Kết hợp phương pháp y học cổ truyền và kỹ thuật phục hồi chức năng hiện đại để điều
+                                trị đau nhức, chấn
+                                thương và cải thiện khả năng vận động cho người bệnh.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div> <!-- END SERVICES CONTENT -->
+            </div> <!-- End container -->
+        </section> <!-- END SERVICES-3 -->
+
+        <!-- INFO-2
+			============================================= -->
+        <section id="info-2" class="wide-60 info-section division">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+
+
+                    <!-- TEXT BLOCK -->
+                    <div class="col-lg-6">
+                        <div class="txt-block mb-40 wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Title -->
+                            <h3 class="h3-md steelblue-color">CẬN LÂM SÀNG</h3>
+
+                            <!-- Text -->
+                            <p class="mb-30">Cận lâm sàng tại bệnh viện cung cấp hệ thống các kỹ thuật xét nghiệm và
+                                chẩn đoán hiện đại,
+                                hỗ trợ bác sĩ đánh giá chính xác tình trạng sức khỏe của người bệnh. Với trang thiết bị
+                                tiên tiến và đội ngũ
+                                chuyên môn giàu kinh nghiệm, chúng tôi đảm bảo kết quả nhanh chóng, tin cậy, góp phần
+                                nâng cao hiệu quả điều trị và chăm sóc toàn diện cho bệnh nhân.
+                            </p>
+
+                            <!-- Options List -->
+                            <div class="row">
+
+                                <div class="col-xl-12">
+                                    <!-- Option #1 -->
+                                    <div class="box-list m-top-15">
+                                        <div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i>
+                                        </div>
+                                        <p class="p-sm">
+                                            Cung cấp đầy đủ các dịch vụ xét nghiệm huyết học, sinh hóa, miễn dịch, vi
+                                            sinh… với hệ thống máy móc
+                                            hiện đại, cho kết quả nhanh chóng và chính xác.
+                                        </p>
+                                    </div>
+
+                                    <!-- Option #2 -->
+                                    <div class="box-list">
+                                        <div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i>
+                                        </div>
+                                        <p class="p-sm">
+                                            Thực hiện các kỹ thuật chẩn đoán hình ảnh như X-quang, siêu âm, CT-Scan, MRI
+                                            với đội ngũ bác sĩ giàu
+                                            kinh nghiệm. Giúp phát hiện sớm các bệnh lý và đưa ra đánh giá toàn diện về
+                                            tình trạng sức khỏe.
+                                        </p>
+                                    </div>
+
+                                    <!-- Option #3 -->
+                                    <div class="box-list">
+                                        <div class="box-list-icon blue-color"><i class="fas fa-angle-double-right"></i>
+                                        </div>
+                                        <p class="p-sm">
+                                            Cung cấp các dịch vụ thăm dò chức năng như điện tim, điện não, đo chức năng
+                                            hô hấp, đo loãng xương…
+                                            nhằm đánh giá hoạt động của các cơ quan trong cơ thể, hỗ trợ chẩn đoán chính
+                                            xác và hiệu quả.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div> <!-- End Options List -->
+
+                        </div>
+                    </div> <!-- END TEXT BLOCK -->
+
+
+                    <!-- IMAGE BLOCK -->
+                    <div class="col-lg-6">
+                        <div class="info-2-img wow fadeInUp" data-wow-delay="0.6s">
+                            <img class="img-fluid"
+                                src="https://jthemes.net/themes/html/medservices/files/images/image-04.png"
+                                alt="info-image">
+                        </div>
+                    </div>
+
+
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </section> <!-- END INFO-2 -->
+
+        <!-- TESTIMONIALS-2
+			============================================= -->
+        <section id="reviews-2" class="bg-lightgrey wide-100 reviews-section division">
+            <div class="container">
+
+                <!-- SECTION TITLE -->
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Hepatology</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus
-                      non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque
-                      necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum
-                      odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/departments-3.jpg" alt=""
-                      class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-4">
+                    <div class="col-lg-10 offset-lg-1 section-title">
+                        <!-- Title 	-->
+                        <h3 class="h3-md steelblue-color">ĐÁNH GIÁ CỦA KHÁCH HÀNG</h3>
+                        <!-- Text -->
+                        <p>Lắng nghe ý kiến của người bệnh giúp chúng tôi không ngừng cải thiện chất lượng dịch vụ. Đây
+                            là những đánh giá chân thực từ khách hàng đã trải nghiệm khám chữa bệnh tại bệnh viện.
+                        </p>
+                    </div>
+                </div> <!-- END SECTION TITLE -->
+
+
+                <!-- TESTIMONIALS CONTENT -->
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Pediatrics</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis
-                      delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam
-                      fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores
-                      sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/departments-4.jpg" alt=""
-                      class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-5">
+                    <div class="col-md-12">
+                        <div class="owl-carousel owl-theme reviews-holder">
+                            <!-- TESTIMONIAL #1 -->
+                            <div class="review-2">
+                                <div class="review-txt text-center">
+                                    <!-- Quote -->
+                                    <div class="quote">
+                                        <img src="https://jthemes.net/themes/html/medservices/files/images/quote.png"
+                                            alt="quote-img" />
+                                    </div>
+
+                                    <!-- Author Avatar -->
+                                    <div class="testimonial-avatar">
+                                        <img src="https://www.benhvienphuctho.vn/images/logo.ico"
+                                            alt="testimonial-avatar">
+                                    </div>
+
+                                    <!-- Testimonial Text -->
+                                    <p>Bác sĩ thăm khám rất kỹ, tư vấn rõ ràng và dễ hiểu. Nhân viên y tế nhiệt tình,
+                                        chu đáo từ khâu tiếp đón đến lúc ra về. Tôi cảm thấy yên tâm và hài lòng khi
+                                        khám chữa bệnh tại đây.
+                                    </p>
+
+                                    <!-- Testimonial Author -->
+                                    <div class="review-author">
+                                        <h5 class="h5-sm">Đặng Vũ T.</h5>
+                                        <span>Kinh doanh</span>
+                                    </div>
+
+                                </div>
+                            </div> <!--END  TESTIMONIAL #1 -->
+
+
+                            <!-- TESTIMONIAL #2 -->
+                            <div class="review-2">
+                                <div class="review-txt text-center">
+
+                                    <!-- Quote -->
+                                    <div class="quote"><img
+                                            src="https://jthemes.net/themes/html/medservices/files/images/quote.png"
+                                            alt="quote-img" /></div>
+
+                                    <!-- Author Avatar -->
+                                    <div class="testimonial-avatar">
+                                        <img src="https://www.benhvienphuctho.vn/images/logo.ico"
+                                            alt="testimonial-avatar">
+                                    </div>
+
+                                    <!-- Testimonial Text -->
+                                    <p>Cơ sở vật chất khang trang, sạch sẽ. Thủ tục khám nhanh gọn, không phải chờ đợi
+                                        lâu. Bác sĩ chuyên môn tốt, giải thích chi tiết tình trạng bệnh và hướng điều
+                                        trị.
+                                    </p>
+
+                                    <!-- Testimonial Author -->
+                                    <div class="review-author">
+                                        <h5 class="h5-sm">Trần Thị M.</h5>
+                                        <span>Nội trợ</span>
+                                    </div>
+
+                                </div>
+                            </div> <!-- END TESTIMONIAL #2 -->
+
+
+                            <!-- TESTIMONIAL #3 -->
+                            <div class="review-2">
+                                <div class="review-txt text-center">
+
+                                    <!-- Quote -->
+                                    <div class="quote"><img
+                                            src="https://jthemes.net/themes/html/medservices/files/images/quote.png"
+                                            alt="quote-img" /></div>
+
+                                    <!-- Author Avatar -->
+                                    <div class="testimonial-avatar">
+                                        <img src="https://www.benhvienphuctho.vn/images/logo.ico"
+                                            alt="testimonial-avatar">
+                                    </div>
+
+                                    <!-- Testimonial Text -->
+                                    <p>Tôi đã đưa người nhà đến khám nhiều lần và lần nào cũng rất hài lòng. Bác sĩ và
+                                        điều dưỡng luôn tận tâm, nhẹ nhàng, đặc biệt rất quan tâm đến người lớn tuổi.
+                                    </p>
+
+                                    <!-- Testimonial Author -->
+                                    <div class="review-author">
+                                        <h5 class="h5-sm">Lê Hoàng P.</h5>
+                                        <span>Kinh doanh</span>
+                                    </div>
+
+                                </div>
+                            </div> <!-- END TESTIMONIAL #3 -->
+
+
+                            <!-- TESTIMONIAL #4 -->
+                            <div class="review-2">
+                                <div class="review-txt text-center">
+
+                                    <!-- Quote -->
+                                    <div class="quote"><img
+                                            src="https://jthemes.net/themes/html/medservices/files/images/quote.png"
+                                            alt="quote-img" /></div>
+
+                                    <!-- Author Avatar -->
+                                    <div class="testimonial-avatar">
+                                        <img src="https://www.benhvienphuctho.vn/images/logo.ico"
+                                            alt="testimonial-avatar">
+                                    </div>
+
+                                    <!-- Testimonial Text -->
+                                    <p>Dịch vụ chuyên nghiệp, quy trình rõ ràng. Nhân viên hướng dẫn tận tình, không gây
+                                        khó khăn cho người bệnh. Tôi sẽ tiếp tục lựa chọn bệnh viện cho những lần khám
+                                        sau.
+                                    </p>
+
+                                    <!-- Testimonial Author -->
+                                    <div class="review-author">
+                                        <h5 class="h5-sm">Phạm Thị T.</h5>
+                                        <span>Giáo viên</span>
+                                    </div>
+
+                                </div>
+                            </div> <!-- END TESTIMONIAL #4 -->
+
+
+                            <!-- TESTIMONIAL #5 -->
+                            <div class="review-2">
+                                <div class="review-txt text-center">
+
+                                    <!-- Quote -->
+                                    <div class="quote"><img
+                                            src="https://jthemes.net/themes/html/medservices/files/images/quote.png"
+                                            alt="quote-img" />
+                                    </div>
+
+                                    <!-- Author Avatar -->
+                                    <div class="testimonial-avatar">
+                                        <img src="https://www.benhvienphuctho.vn/images/logo.ico"
+                                            alt="testimonial-avatar">
+                                    </div>
+
+                                    <!-- Testimonial Text -->
+                                    <p>Tôi ấn tượng với thái độ phục vụ và sự tận tâm của đội ngũ y bác sĩ. Bệnh viện
+                                        luôn đặt lợi ích và sự an toàn của người bệnh lên hàng đầu.
+                                    </p>
+
+                                    <!-- Testimonial Author -->
+                                    <div class="review-author">
+                                        <h5 class="h5-sm">Đỗ Minh K.</h5>
+                                        <span>Kỹ sư</span>
+                                    </div>
+
+                                </div>
+                            </div> <!-- END TESTIMONIAL #5 -->
+                        </div>
+                    </div>
+                </div> <!-- END TESTIMONIALS CONTENT -->
+
+
+            </div> <!-- End container -->
+        </section> <!-- END TESTIMONIALS-2 -->
+
+
+
+
+        <!-- DOCTORS-1
+			============================================= -->
+        <section id="doctors-1" class="wide-40 doctors-section division">
+            <div class="container">
+
+
+                <!-- SECTION TITLE -->
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Ophthalmologists</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut
-                      quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae
-                      molestiae voluptate vel</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/departments-5.jpg" alt=""
-                      class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <div class="col-lg-10 offset-lg-1 section-title">
 
-      </div>
+                        <!-- Title 	-->
+                        <h3 class="h3-md steelblue-color">ĐỘI NGŨ CHUYÊN GIA</h3>
 
-    </section><!-- /Tabs Section -->
+                        <!-- Text -->
+                        <p>Đội ngũ bác sĩ và chuyên gia của chúng tôi đều có trình độ chuyên môn cao, nhiều năm kinh
+                            nghiệm trong chẩn đoán và điều trị. Mỗi thành viên luôn tận tâm, đặt sức khỏe và sự an toàn
+                            của người bệnh lên hàng đầu.
+                        </p>
 
-    <!-- news Section -->
-    <section id="news" class="doctors section">
-      <!-- Section Title -->
-      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
-        <h2>TIN TỨC</h2>
-        <p>Cập nhật những tin tức mới nhất về hoạt động, dịch vụ và các thông báo quan trọng của chúng tôi.</p>
-      </div><!-- End Section Title -->
-      <div class="container">
-        <div class="row g-3">
-          <div class="col-md-3">
-            <div class="card h-100 d-flex flex-column">
-              <img src="https://benhviengialam.com/Resources/Post/2025/02/12/logo1.jpg" class="card-img-top" alt="">
-              <div class="card-body d-flex flex-column">
-                <h6 class="card-title">Thư mời báo giá thuốc thuộc Kế hoạch lựa chọn nhà thầu cung cấp thuốc cho nhà
-                  thuốc bệnh viện năm 2025</h6>
-
-                <!-- Button luôn ở cuối -->
-                <a href="#" class="btn btn-success mt-auto">Chi tiết</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card h-100 d-flex flex-column">
-              <img
-                src="https://benhviengialam.com/Resources/Post/2024/11/28/pngtree-simple-pill-icon-vector-art-illustration-png-image-155001751.jpg"
-                class="card-img-top" alt="">
-              <div class="card-body d-flex flex-column">
-                <h6 class="card-title">Quyết định Xếp cấp chuyên môn kỹ thuật đối với Bệnh viện Đa khoa huyện Gia Lâm
-                </h6>
-                <!-- Button luôn ở cuối -->
-                <a href="#" class="btn btn-success mt-auto">Chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card h-100 d-flex flex-column">
-              <img src="https://benhviengialam.com/Resources/Post/2025/02/12/logo1.jpg" class="card-img-top" alt="">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Ai là người có nguy cơ bị lây nhiễm Covid-19 cao nhất?</h5>
-
-                <!-- Button luôn ở cuối -->
-                <a href="#" class="btn btn-success mt-auto">Chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card h-100 d-flex flex-column">
-              <img
-                src="https://benhviengialam.com/Resources/Post/2024/11/28/pngtree-simple-pill-icon-vector-art-illustration-png-image-155001751.jpg"
-                class="card-img-top" alt="">
-              <div class="card-body d-flex flex-column">
-                <h6 class="card-title">Thư mời chào báo giá thuốc thầu tại bệnh viện năm 2025</h6>
-                <!-- Button luôn ở cuối -->
-                <a href="#" class="btn btn-success mt-auto">Chi tiết</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- End news Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h2>
-        <p>Lắng nghe ý kiến của người bệnh giúp chúng tôi không ngừng cải thiện chất lượng dịch vụ. Đây là những đánh
-          giá chân thực từ khách hàng đã trải nghiệm khám chữa bệnh tại bệnh viện.</p>
-      </div><!-- End Section Title -->
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class=" bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
-                    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/testimonials/testimonials-1.jpg"
-                  class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum
-                    velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/testimonials/testimonials-2.jpg"
-                  class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis
-                    minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/testimonials/testimonials-3.jpg"
-                  class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim
-                    duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/testimonials/testimonials-4.jpg"
-                  class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt
-                    culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/testimonials/testimonials-5.jpg"
-                  class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Testimonials Section -->
-
-    <!-- Doctors Section -->
-    <section id="doctors" class="doctors section light-background">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>ĐỘI NGŨ CHUYÊN GIA</h2>
-        <p>Đội ngũ bác sĩ và chuyên gia của chúng tôi đều có trình độ chuyên môn cao, nhiều năm kinh nghiệm trong chẩn
-          đoán và điều trị. Mỗi thành viên luôn tận tâm, đặt sức khỏe và sự an toàn của người bệnh lên hàng đầu.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="row">
-          <div class="swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
-                },
-                "1200": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/10/picture1.jpg" class="img-fluid"
-                        alt="">
                     </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Walter White</h4>
-                        <span>Chief Medical Officer</span>
-                      </a>
+                </div> <!-- END SECTION TITLE -->
+
+                <div class="row">
+                    <div class="owl-carousel owl-theme services-holder">
+                        <!-- DOCTOR #1 -->
+                        <div class="doctor-1 m-3">
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-1.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+                            </div>
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+                        </div><!-- END DOCTOR #1 -->
+
+                        <!-- DOCTOR #2 -->
+                        <div class="doctor-1 m-3">
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-2.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+                            </div>
+
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+                        </div><!-- END DOCTOR #2 -->
+
+
+                        <!-- DOCTOR #3 -->
+                        <div class="doctor-1 m-3">
+
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-3.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+
+                            </div>
+
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+
+                        </div><!-- END DOCTOR #3 -->
+
+
+                        <!-- DOCTOR #4 -->
+                        <div class="doctor-1 m-3">
+
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-4.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+                            </div>
+
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+
+                        </div><!-- END DOCTOR #4 -->
+
+                        <!-- DOCTOR #1 -->
+                        <div class="doctor-1 m-3">
+
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-1.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+                            </div>
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+                        </div> <!-- END DOCTOR #1 -->
+
+
+                        <!-- DOCTOR #2 -->
+                        <div class="doctor-1 m-3">
+
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-2.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+                            </div>
+
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+                        </div> <!-- END DOCTOR #2 -->
+
+
+                        <!-- DOCTOR #3 -->
+                        <div class="doctor-1 m-3">
+
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-3.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+
+                            </div>
+
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+
+                        </div> <!-- END DOCTOR #3 -->
+
+
+                        <!-- DOCTOR #4 -->
+                        <div class="doctor-1 m-3">
+
+                            <!-- Doctor Photo -->
+                            <div class="hover-overlay text-center">
+
+                                <!-- Photo -->
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/doctor-4.jpg"
+                                    alt="doctor-foto">
+                                <div class="item-overlay"></div>
+                            </div>
+
+                            <!-- Doctor Meta -->
+                            <div class="doctor-meta">
+                                <h5 class="h5-sm steelblue-color">BSCKI. Nguyễn Văn A</h5>
+                                <span class="blue-color">Phó trưởng khoa</span>
+                            </div>
+                        </div> <!-- END DOCTOR #4 -->
                     </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div><!-- End testimonial item -->
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/10/5.jpg" class="img-fluid" alt="">
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </section> <!-- END DOCTORS-1 -->
+
+        <!-- STATISTIC-1
+			============================================= -->
+        <div id="statistic-1" class="bg-scroll statistic-section division">
+            <div class="container white-color">
+                <div class="row">
+
+
+                    <!-- STATISTIC BLOCK #1 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic-block icon-lg wow fadeInUp" data-wow-delay="0.4s">
+
+                            <!-- Icon  -->
+                            <span class="flaticon-062-cardiogram-3"></span>
+
+                            <!-- Text -->
+                            <h5 class="statistic-number"><span class="count-element">+500</span></h5>
+                            <p class="txt-400">Bệnh nhân nội trú</p>
+
+                        </div>
                     </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Sarah Jhonson</h4>
-                        <span>Anesthesiologist</span>
-                      </a>
+
+
+                    <!-- STATISTIC BLOCK #2 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic-block icon-lg wow fadeInUp" data-wow-delay="0.6s">
+
+                            <!-- Icon  -->
+                            <span class="flaticon-137-doctor"></span>
+
+                            <!-- Text -->
+                            <h5 class="statistic-number"><span class="count-element">+100</span></h5>
+                            <p class="txt-400">Bác sĩ chuyên khoa</p>
+
+                        </div>
                     </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/10/2.jpg" class="img-fluid" alt="">
+
+
+                    <!-- STATISTIC BLOCK #3 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic-block icon-lg wow fadeInUp" data-wow-delay="0.8s">
+
+                            <!-- Icon  -->
+                            <span class="flaticon-065-hospital-bed"></span>
+
+                            <!-- Text -->
+                            <h5 class="statistic-number"><span class="count-element">17</span></h5>
+                            <p class="txt-400">Khoa phòng</p>
+
+                        </div>
                     </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>William Anderson</h4>
-                        <span>Cardiology</span>
-                      </a>
+
+
+                    <!-- STATISTIC BLOCK #4 -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="statistic-block icon-lg wow fadeInUp" data-wow-delay="1s">
+
+                            <!-- Icon  -->
+                            <span class="flaticon-040-placeholder"></span>
+
+                            <!-- Text -->
+                            <h5 class="statistic-number"><span class="count-element">+900</span></h5>
+                            <p class="txt-400">Lượt khám ngoại trú</p>
+
+                        </div>
                     </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/12/bs-hien.jpg" class="img-fluid"
-                        alt="">
+
+
+                </div> <!-- End row -->
+            </div> <!-- End container -->
+        </div> <!-- END STATISTIC-1 -->
+
+        <!-- BLOG-1
+			============================================= -->
+        <section id="blog-1" class="wide-60 blog-section division">
+            <div class="container">
+
+
+                <!-- SECTION TITLE -->
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 section-title">
+
+                        <!-- Title 	-->
+                        <h3 class="h3-md steelblue-color">TIN TỨC</h3>
+                        <!-- Text -->
+                        <p>Cập nhật những tin tức mới nhất về hoạt động, dịch vụ và các thông báo quan trọng của chúng
+                            tôi.
+                        </p>
+
                     </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Amanda Jepson</h4>
-                        <span>Neurosurgeon</span>
-                      </a>
-                    </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/12/chu-huyen.jpg" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Amanda Jepson</h4>
-                        <span>Neurosurgeon</span>
-                      </a>
-                    </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/12/bs-hien.jpg" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Amanda Jepson</h4>
-                        <span>Neurosurgeon</span>
-                      </a>
-                    </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/12/chu-huyen.jpg" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Amanda Jepson</h4>
-                        <span>Neurosurgeon</span>
-                      </a>
-                    </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/12/bs-hien.jpg" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Amanda Jepson</h4>
-                        <span>Neurosurgeon</span>
-                      </a>
-                    </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-              <div class="swiper-slide">
-                <div class="d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-                  <div class="team-member">
-                    <div class="member-img">
-                      <img src="https://benhviengialam.com/Resources/MenuImg/2023/12/12/chu-huyen.jpg" class="img-fluid"
-                        alt="">
-                    </div>
-                    <div class="member-info">
-                      <a href="#">
-                        <h4>Amanda Jepson</h4>
-                        <span>Neurosurgeon</span>
-                      </a>
-                    </div>
-                  </div>
-                </div><!-- End Team Member -->
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Doctors Section -->
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>THƯ VIỆN ẢNH</h2>
-        <p>Chúng tôi cung cấp hình ảnh minh họa về các hoạt động, dịch vụ và cơ sở vật chất của bệnh viện, giúp bạn có
-          cái nhìn trực quan và tin tưởng hơn khi lựa chọn dịch vụ y tế.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 0
-                },
-                "768": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-1.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-1.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-2.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-2.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-3.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-3.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-4.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-4.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-5.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-5.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-6.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-6.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-7.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-7.jpg"
-                  class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery"
-                href="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-8.jpg"><img
-                  src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-8.jpg"
-                  class="img-fluid" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>BẢNG GIÁ</h2>
-        <p>Chúng tôi cung cấp bảng giá chi tiết các dịch vụ y tế, khám chữa bệnh và xét nghiệm, minh bạch và rõ ràng,
-          giúp bạn dễ dàng tham khảo và lựa chọn dịch vụ phù hợp.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-3">
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>BẢO HIỂM Y TẾ</h3>
-              <h4><sup>Chỉ từ</sup>0 VNĐ<span>/ lần</span></h4>
-              <ul>
-                <li>Khám lâm sàng</li>
-                <li>Xét nghiệm</li>
-                <li>Chẩn đoán hình ảnh</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Đặt lịch ngay</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item">
-              <h3>KHÁM SỨC KHOẺ</h3>
-              <h4><sup>VNĐ</sup>350.000<span> / lần</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Đặt lịch ngay</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <h3>KHÁM CHỮA BỆNH THEO YÊU CẦU</h3>
-              <h4><sup>VNĐ</sup>1.000.000<span> / lần</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Đặt lịch ngay</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>KHÁM TỔNG QUÁT</h3>
-              <h4><sup>VNĐ</sup>7.000.000<span> / lần</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Đặt lịch ngay</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>TIN TỨC NGÀNH</h2>
-        <p>Tại đây, chúng tôi tổng hợp những tin tức liên quan tới ngành, dịch vụ y tế và quy trình
-          khám chữa bệnh, giúp bạn dễ dàng tìm kiếm thông tin cần thiết.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row g-4">
-          <!-- Bài viết 1 -->
-          <div class="col-12 col-md-6 col-xl-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-5.jpg" class="card-img-top" alt="Ảnh bài viết">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Tiêu đề bài viết số 1
-                </h5>
-                <p class="text-muted mb-0">
-                  <small>📅 20/12/2025</small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bài viết 2 -->
-          <div class="col-12 col-md-6 col-xl-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-8.jpg" class="card-img-top" alt="Ảnh bài viết">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Tiêu đề bài viết số 2
-                </h5>
-                <p class="text-muted mb-0">
-                  <small>📅 19/12/2025</small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bài viết 3 -->
-          <div class="col-12 col-md-6 col-xl-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-5.jpg" class="card-img-top" alt="Ảnh bài viết">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Tiêu đề bài viết số 3
-                </h5>
-                <p class="text-muted mb-0">
-                  <small>📅 18/12/2025</small>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bài viết 4 -->
-          <div class="col-12 col-md-6 col-xl-3">
-            <div class="card h-100 shadow-sm">
-              <img src="https://bootstrapmade.com/content/demo/Medicio/assets/img/gallery/gallery-8.jpg" class="card-img-top" alt="Ảnh bài viết">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Tiêu đề bài viết số 4
-                </h5>
-                <p class="text-muted mb-0">
-                  <small>📅 17/12/2025</small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>LIÊN HỆ</h2>
-        <p>Liên hệ với chúng tôi ngay để được tư vấn, đặt lịch khám hoặc giải đáp mọi thắc mắc về dịch vụ y tế.</p>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 370px;"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-          frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-12 ">
-            <div class="row gy-4">
-
-              <div class="col-lg-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-                  data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Địa chỉ</h3>
-                  <p>Khu đô thị mới Trâu Quỳ, Trâu Quỳ, Gia Lâm, Hà Nội</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-3">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-                  data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Điện thoại</h3>
-                  <p>024 38 760 517</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-3">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
-                  data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p><a href="mailto:bvdkgl_soyt@hanoi.gov.vn" class="__cf_email__">bvdkgl_soyt@hanoi.gov.vn</a></p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+
+                <!-- BLOG POSTS HOLDER -->
+                <div class="row">
+                    <!-- BLOG POST #1 -->
+                    <div class="col-lg-4">
+                        <div class="blog-post wow fadeInUp" data-wow-delay="0.4s">
+
+                            <!-- BLOG POST IMAGE -->
+                            <div class="blog-post-img">
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/blog/post-1-img.jpg"
+                                    alt="blog-post-image" />
+                            </div>
+
+                            <!-- BLOG POST TITLE -->
+                            <div class="blog-post-txt">
+
+                                <!-- Post Title -->
+                                <h5 class="h5-sm steelblue-color"><a href="single-post.html">5 Benefits Of Integrative
+                                        Medicine</a></h5>
+
+                                <!-- Post Data -->
+                                <span>May 03, 2019 by <span>Dr.Jeremy Smith</span></span>
+
+                                <!-- Post Text -->
+                                <p>Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor blandit
+                                    sapien at
+                                    gravida donec ipsum, at porta justo...
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- END  BLOG POST #1 -->
+
+
+                    <!-- BLOG POST #2 -->
+                    <div class="col-lg-4">
+                        <div class="blog-post wow fadeInUp" data-wow-delay="0.6s">
+
+                            <!-- BLOG POST IMAGE -->
+                            <div class="blog-post-img">
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/blog/post-2-img.jpg"
+                                    alt="blog-post-image" />
+                            </div>
+
+                            <!-- BLOG POST TEXT -->
+                            <div class="blog-post-txt">
+
+                                <!-- Post Title -->
+                                <h5 class="h5-sm steelblue-color"><a href="single-post.html">Your Health Is In Your
+                                        Hands</a></h5>
+
+                                <!-- Post Data -->
+                                <span>Apr 28, 2019 by <span>Dr.Jonathan Barnes</span></span>
+
+                                <!-- Post Text -->
+                                <p>Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor blandit
+                                    sapien at
+                                    gravida donec ipsum, at porta justo...
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- END  BLOG POST #2 -->
+
+
+                    <!-- BLOG POST #3 -->
+                    <div class="col-lg-4">
+                        <div class="blog-post wow fadeInUp" data-wow-delay="0.8s">
+
+                            <!-- BLOG POST IMAGE -->
+                            <div class="blog-post-img">
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/blog/post-3-img.jpg"
+                                    alt="blog-post-image" />
+                            </div>
+
+                            <!-- BLOG POST TEXT -->
+                            <div class="blog-post-txt">
+
+                                <!-- Post Title -->
+                                <h5 class="h5-sm steelblue-color"><a href="single-post.html">How Weather Impacts Your
+                                        Health</a></h5>
+
+                                <!-- Post Data -->
+                                <span>Apr 17, 2019 by <span>Dr.Megan Coleman</span></span>
+
+                                <!-- Post Text -->
+                                <p>Quaerat neque purus ipsum neque dolor primis libero tempus impedit tempor blandit
+                                    sapien at
+                                    gravida donec ipsum, at porta justo...
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div> <!-- END  BLOG POST #3 -->
+
+
+                </div> <!-- END BLOG POSTS HOLDER -->
+
+
+            </div> <!-- End container -->
+        </section> <!-- END BLOG-1 -->
+
+
+
+
+        <!-- BANNER-2
+			============================================= -->
+        <section id="banner-2" class="pt-80 banner-section division">
+            <div class="bg-scroll bg-inner bg-image division">
+                <div class="container white-color">
+                    <div class="row d-flex align-items-center">
+
+
+                        <!-- CALL TO ACTION IMAGE -->
+                        <div class="col-lg-5">
+                            <div class="banner-2-img">
+                                <img class="img-fluid"
+                                    src="https://jthemes.net/themes/html/medservices/files/images/image-05.png"
+                                    alt="banner-image" />
+                            </div>
+                        </div>
+
+
+                        <!-- BANNER TEXT -->
+                        <div class="col-lg-6 offset-lg-1">
+                            <div class="banner-txt pc-30 wow fadeInUp" data-wow-delay="0.4s">
+                                <!-- Title  -->
+                                <h3 class="h3-lg">TRA CỨU GIÁ DỊCH VỤ</h3>
+
+                                <!-- Text -->
+                                <p>Nhập loại dịch vụ hoặc tên dịch vu để tra cứu bảng giá danh mục kỹ thuật nhanh chóng
+                                    và chính xác. Hệ thống hỗ trợ truy cập 24/7, giúp bạn tra cứu mọi lúc, mọi nơi.
+                                </p>
+
+                                <!-- Button -->
+                                <a href="#" class="btn btn-tra-white blue-hover">Tra cứu ngay</a>
+
+                            </div>
+                        </div> <!-- END BANNER TEXT -->
+
+
+                    </div> <!-- End row -->
+                </div> <!-- End container -->
+            </div> <!-- End Inner Background -->
+        </section> <!-- END BANNER-2 -->
+
+
+
+
+        <!-- FOOTER-1
+			============================================= -->
+        <footer id="footer-1" class="wide-40 footer division">
+            <div class="container">
+
+
+                <!-- FOOTER CONTENT -->
+                <div class="row">
+
+
+                    <!-- FOOTER INFO -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-info mb-40">
+
+                            <!-- Footer Logo -->
+                            <!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
+                            <img src="https://www.benhvienphuctho.vn/assets/images/logo.png" width="180"
+                                alt="footer-logo">
+
+                            <!-- Text -->
+                            <p class="p-sm mt-20">Aliquam orci nullam tempor sapien gravida donec an enim ipsum porta
+                                justo at velna auctor congue
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!-- FOOTER CONTACTS -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-box mb-40">
+
+                            <!-- Title -->
+                            <h5 class="h5-xs">Địa chỉ</h5>
+
+                            <!-- Address -->
+                            <p>Thị Trấn Phúc Thọ - Phúc Thọ</p>
+                            <p>Hà Nội</p>
+
+                            <!-- Email -->
+                            <p class="foo-email mt-20">Email: <a
+                                    href="mailto:bvdkpt@hanoi.gov.vn">bvdkpt@hanoi.gov.vn</a>
+                            </p>
+
+                            <!-- Phone -->
+                            <p>Điện thoại: (+84) 2433848351</p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- FOOTER WORKING HOURS -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-box mb-40">
+
+                            <!-- Title -->
+                            <h5 class="h5-xs">Giờ làm việc</h5>
+
+                            <!-- Working Hours -->
+                            <p class="p-sm">Thứ Hai - Thứ Tư - <span>9:00 AM - 7:00 PM</span></p>
+                            <p class="p-sm">Thứ Năm - <span>9:00 AM - 6:30 PM</span></p>
+                            <p class="p-sm">Thứ Sáu - <span>9:00 AM - 6:00 PM</span></p>
+                            <p class="p-sm">Thứ Bảy - Chủ Nhật - <span>9:00 AM - 6:00 PM</span></p>
+
+                        </div>
+                    </div>
+
+
+                    <!-- FOOTER PHONE NUMBER -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-box mb-40">
+
+                            <!-- Title -->
+                            <h5 class="h5-xs">Trường hợp khẩn cấp</h5>
+
+                            <!-- Footer List -->
+                            <h5 class="h5-xl blue-color"> (+84)2433848351</h5>
+
+                            <!-- Text -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d59555.54306041957!2d105.556983!3d21.103736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134585d6e1734a1%3A0x58b262c6a1c9aa95!2zQuG7h25oIFZp4buHbiDEkGEgS2hvYSBQaMO6YyBUaOG7jQ!5e0!3m2!1svi!2sus!4v1777534443757!5m2!1svi!2sus"
+                                width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+
+
+                </div> <!-- END FOOTER CONTENT -->
+
+
+                <!-- FOOTER COPYRIGHT -->
+                <div class="bottom-footer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="footer-copyright">&copy; 2026 <span>Bệnh viện Phúc Thọ</span>. All Rights Reserved
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+            </div> <!-- End container -->
+        </footer> <!-- END FOOTER-1 -->
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
-                </div>
+    </div> <!-- END PAGE CONTENT -->
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
-                </div>
 
-              </div>
-            </form>
-          </div> -->
-          <!-- End Contact Form -->
+    <!-- EXTERNAL SCRIPTS
+		============================================= -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/hero-form.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/comment-form.js"></script>
+    <script src="js/appointment-form.js"></script>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/wow.js"></script>
 
-        </div>
+    <!-- Custom Script -->
+    <script src="js/custom.js"></script>
 
-      </div>
+    <script>
+        new WOW().init();
+    </script>
 
-    </section><!-- /Contact Section -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!-- [if lt IE 9]>
+			<script src="js/html5shiv.js" type="text/javascript"></script>
+			<script src="js/respond.min.js" type="text/javascript"></script>
+		<![endif] -->
 
-  </main>
+    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information. -->
+    <!--
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-XXXXX-Y', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		-->
+    <!-- End Google Analytics -->
 
-  <footer id="footer" class="footer light-background">
+    <script src="js/changer.js"></script>
+    <script defer src="js/styleswitch.js"></script>
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Bệnh viện đa khoa Gia Lâm</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>Khu đô thị mới Trâu Quỳ, </p>
-            <p>Gia Lâm, Hà Nội</p>
-            <p class="mt-3"><strong>Hotline:</strong> <span>024 38 760 517</span></p>
-            <p><strong>Email:</strong> <span><a href="mailto:bvdkgl_soyt@hanoi.gov.vn"
-                  class="__cf_email__">bvdkgl_soyt@hanoi.gov.vn</a></span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Bệnh viện đa khoa Huyện Gia Lâm</strong> <span>All
-          Rights Reserved</span></p>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/validate.js"></script>
-  <script src="./assets/js/aos.js"></script>
-  <script src="./assets/js/glightbox.min.js"></script>
-  <script src="./assets/js/purecounter_vanilla.js"></script>
-  <script src="./assets/js/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="./assets/js/main.js"></script>
 
 </body>
+
 
 </html>
