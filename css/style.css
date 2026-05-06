@@ -27,7 +27,7 @@ html {
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /*------------------------------------------------------------------*/
@@ -286,11 +286,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Header H5 */
-h5.h5-xs { font-size: 1.125rem; }  /* 18px */
-h5.h5-sm { font-size: 1.1875rem; } /* 19px */
-h5.h5-md { font-size: 1.25rem;  }  /* 20px */
-h5.h5-lg { font-size: 1.375rem;  } /* 22px */
-h5.h5-xl { font-size: 1.5rem; }    /* 24px */
+h5.h5-xs { font-size: 14px; }  /* 18px */
+h5.h5-sm { font-size: 15px; } /* 19px */
+h5.h5-md { font-size: 16px;  }  /* 20px */
+h5.h5-lg { font-size: 17px;  } /* 22px */
+h5.h5-xl { font-size: 18px; }    /* 24px */
 
 /* Header H4 */
 h4.h4-xs { font-size: 1.625rem; }  /* 26px */
@@ -961,7 +961,7 @@ span.id-color {
  }
 
  .headerwp {
-  max-width: 1140px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0;
  }
@@ -4069,7 +4069,7 @@ td.text-right {
 
 .sblog-post-txt span,
 #blog-page .blog-post-txt span {
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .blog-post-txt span span,
@@ -4093,7 +4093,7 @@ td.text-right {
 }
 
 #blog-page .blog-post-txt p {
-  font-size: 1rem;
+  font-size: 14px;
   margin-top: 10px;
 }
 
@@ -5730,4 +5730,8 @@ nav a#pull {
   opacity: 0.8;
 }
 
-
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1320px;
+    }
+}
