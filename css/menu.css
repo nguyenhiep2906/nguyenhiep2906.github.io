@@ -1380,7 +1380,7 @@ video {
     -webkit-overflow-scrolling: touch;
     visibility: visible;
     z-index: 1000;
-    top: 0;
+    top: 60px;
   }
 
   .wsactive .wsmenu>.wsmenu-list {
