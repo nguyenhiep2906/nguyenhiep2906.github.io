@@ -1141,7 +1141,59 @@ span.id-color {
 @media only screen and (min-width: 230px) and (max-width:991px) {
 
   .headtoppart {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10003;
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .headertopleft,
+  .headertopright {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .headertopleft {
     display: none;
+  }
+
+  .headertopright {
+    margin-top: 6px;
+  }
+
+  .headertopright a {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0 4px 4px 0;
+    padding: 6px 10px;
+    float: none;
+  }
+
+  .address a,
+  .address span {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  .mobiletext02 {
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  .wsmobileheader {
+    top: 55px;
   }
 
   .swichermainbx {
