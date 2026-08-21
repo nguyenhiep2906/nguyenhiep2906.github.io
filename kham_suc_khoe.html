@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết quả khám sức khỏe định kỳ</title>
+    <!-- Bootstrap 4.3.1 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f0f7f7;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #333;
+        }
+        .card-custom {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e1e8ed;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            margin-bottom: 20px;
+        }
+        .header-banner {
+            background-color: #005aac;
+            border-radius: 8px;
+            padding: 10px 16px;
+        }
+        .search-input-wrap {
+            position: relative;
+            width: 220px;
+        }
+        .search-input-wrap input {
+            border-radius: 20px;
+            padding-left: 32px;
+            border: 1px solid #ddd;
+            font-size: 0.85rem;
+        }
+        .search-input-wrap .fa-search {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+            font-size: 0.85rem;
+        }
+        .info-label {
+            color: #555;
+            font-size: 0.95rem;
+        }
+        .info-value {
+            font-weight: 700;
+            color: #111;
+            font-size: 0.95rem;
+        }
+        .gauge-wrap {
+            position: relative;
+            width: 110px;
+            height: 55px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .gauge-bg {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: conic-gradient(from 270deg, #ff5252 0deg 60deg, #ffc107 60deg 120deg, #4caf50 120deg 180deg);
+        }
+        .gauge-inner {
+            width: 80px;
+            height: 80px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        .gauge-pointer {
+            width: 3px;
+            height: 45px;
+            background: #333;
+            position: absolute;
+            bottom: 0;
+            left: 53.5px;
+            transform-origin: bottom center;
+            border-radius: 2px;
+        }
+        .clinical-box {
+            border-radius: 8px;
+            padding: 12px;
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .bg-teal-light {
+            background-color: #e2f3f3;
+        }
+        .bg-yellow-light {
+            background-color: #fff6d6;
+        }
+        .clinical-icon {
+            width: 42px;
+            text-align: center;
+            font-size: 1.8rem;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .status-ok {
+            color: #2e7d32;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+        .status-warn {
+            color: #d84315;
+            font-weight: 600;
+            font-size: 0.88rem;
+        }
+		/* Ép trình duyệt hiển thị màu nền & dải màu gradient khi in */
+        * {
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+            color-adjust: exact !important;
+        }
+
+        /* Tối ưu riêng khi bấm In (Ẩn thanh tìm kiếm & nút bấm) */
+        @media print {
+            .header-banner {
+                background-color: transparent !important;
+                padding: 0 !important;
+            }
+            .search-input-wrap, 
+            .header-banner button {
+                display: none !important; /* Ẩn ô tìm kiếm và các nút khi in */
+            }
+            .gauge-wrap, .gauge-bg, .gauge-inner, .gauge-pointer {
+                display: block !important;
+                visibility: visible !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-4">
+    <!-- Tiêu đề trang -->
+    <h5 class="text-center font-weight-bold mb-3 text-uppercase">
+        KẾT QUẢ KHÁM SỨC KHỎE ĐỊNH KỲ - TRẺ EM TRONG CƠ SỞ GIÁO DỤC
+    </h5>
+
+    <!-- Thanh tìm kiếm 2 ô & In -->
+    <div class="header-banner d-flex justify-content-between align-items-center flex-wrap mb-4">
+        <div class="d-flex align-items-center flex-wrap my-1">
+            <!-- Ô 1: Tìm kiếm theo Số CCCD/Mã định danh -->
+            <div class="search-input-wrap mr-2 mb-2 mb-sm-0">
+                <i class="fas fa-search"></i>
+                <input type="text" class="form-control form-control-sm" placeholder="Nhập Số CCCD/Mã định danh...">
+            </div>
+            <!-- Ô 2: Tìm kiếm theo Họ và tên -->
+            <div class="search-input-wrap mr-2 mb-2 mb-sm-0">
+                <i class="fas fa-search"></i>
+                <input type="text" class="form-control form-control-sm" placeholder="Nhập Họ và tên...">
+            </div>
+            <!-- Nút Tìm kiếm (Chuẩn class Bootstrap) -->
+            <button class="btn btn-light btn-sm font-weight-bold" type="button">
+                <i class="fas fa-search mr-1"></i> Tìm kiếm
+            </button>
+        </div>
+        <!-- Nút In (Chuẩn class Bootstrap) -->
+        <button class="btn btn-light btn-sm font-weight-bold" onclick="window.print()" title="In trang">
+            <i class="fas fa-print mr-1"></i> In
+        </button>
+    </div>
+
+    <!-- Hàng 1: Thông tin chung & Chỉ số thể lực -->
+    <div class="row">
+        <!-- Card Thông tin chung -->
+        <div class="col-lg-6 mb-4">
+            <div class="card card-custom h-100 p-3">
+                <h6 class="font-weight-bold text-uppercase mb-3">THÔNG TIN CHUNG</h6>
+                <div class="row mb-2">
+                    <div class="col-5 info-label">Họ và tên:</div>
+                    <div class="col-7 info-value">NGUYỄN ĐỨC ANH</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-5 info-label">Ngày, tháng, năm sinh:</div>
+                    <div class="col-7 info-value">15/08/2014</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-5 info-label">Giới tính:</div>
+                    <div class="col-7 info-value">Nam</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-5 info-label">Số CCCD/Mã định danh:</div>
+                    <div class="col-7 info-value">001314XXXXXX</div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-5 info-label">Nơi công tác, học tập:</div>
+                    <div class="col-7 info-value">Trường Tiểu học Lô-mô-nô-xốp</div>
+                </div>
+                <div class="row">
+                    <div class="col-5 info-label">Ngày khám*:</div>
+                    <div class="col-7 info-value">21/08/2026</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Chỉ số thể lực -->
+        <div class="col-lg-6 mb-4">
+            <div class="card card-custom h-100 p-3">
+                <h6 class="font-weight-bold text-uppercase mb-3">CHỈ SỐ THỂ LỰC & SINH HIỆU</h6>
+                <div class="row text-center my-auto py-2">
+                    <div class="col-4">
+                        <div class="gauge-wrap mb-2">
+                            <div class="gauge-bg"></div>
+                            <div class="gauge-inner"></div>
+                            <div class="gauge-pointer" style="transform: rotate(45deg);"></div>
+                        </div>
+                        <div class="small font-weight-bold text-muted">Cân nặng (kg)</div>
+                        <div class="h6 font-weight-bold mt-1 mb-0">35.2</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="gauge-wrap mb-2">
+                            <div class="gauge-bg"></div>
+                            <div class="gauge-inner"></div>
+                            <div class="gauge-pointer" style="transform: rotate(30deg);"></div>
+                        </div>
+                        <div class="small font-weight-bold text-muted">Chiều cao (cm)</div>
+                        <div class="h6 font-weight-bold mt-1 mb-0">140</div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-2 text-danger">
+                            <i class="fas fa-heartbeat fa-3x"></i>
+                        </div>
+                        <div class="small font-weight-bold text-muted">Mạch (lần/phút)</div>
+                        <div class="h6 font-weight-bold mt-1 mb-0">78</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hàng 2: Kết quả khám lâm sàng -->
+    <div class="card card-custom p-3">
+        <h6 class="font-weight-bold text-uppercase mb-3">KẾT QUẢ KHÁM LÂM SÀNG</h6>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-heart"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Khám Tuần hoàn</div>
+                        <div class="status-ok"> Bình thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-lungs"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Khám Hô hấp</div>
+                        <div class="status-ok"> Bình thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-drumstick-bite"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Khám Thần kinh</div>
+                        <div class="status-ok"> Bình thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-drumstick-bite"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Khám Tiêu hóa</div>
+                        <div class="status-ok"> Bình thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-notes-medical"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Khám Thận, Tiết niệu</div>
+                        <div class="status-ok"> Bình thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-brain"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Khám tâm thần</div>
+                        <div class="status-ok"> Bình thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-eye"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Các bệnh về mắt</div>
+                        <div class="status-ok"></i> Cận thị nhẹ (0.75 Diop), cần đeo kính</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-deaf"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Các bệnh về tai mũi họng</div>
+                        <div class="status-ok"> Không phát hiện bất thường</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-3">
+                <div class="clinical-box bg-teal-light">
+                    <div class="clinical-icon text-danger"><i class="fas fa-tooth"></i></div>
+                    <div>
+                        <div class="font-weight-bold small">Các bệnh về răng hàm mặt</div>
+                        <div class="status-ok"> Sâu răng số 6 hàm dưới, cần điều trị</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
